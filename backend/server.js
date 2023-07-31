@@ -11,6 +11,6 @@ app.get("/room", (req, res) => {
     res.send("Requête reçue sur '/room");
 });
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
     console.log("Server running on http://localhost:"+PORT);
 });
